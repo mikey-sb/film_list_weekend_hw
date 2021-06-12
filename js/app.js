@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Javascript loaded');
     document.querySelector('#new-film-form').addEventListener('submit', handleButton);
-    document.querySelector('#delete-all').addEventListener('click', handleDeleteAllClick);
-    
+    document.querySelector('#delete-all').addEventListener('click', handleDeleteAllClick);   
 })
 
 const handleDeleteAllClick = function(event){
