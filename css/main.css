@@ -4,6 +4,7 @@ body{
 }
 h1, h2, h3, h4, h5, p, li, label {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .one-star, .two-star, .three-star, .four-star, .five-star {
@@ -69,15 +70,81 @@ h1, h2, h3, h4, h5, p, li, label {
     list-style: none;
 }
 
+
 #film-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    flex-direction: row;
     justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 350px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 320px;    
+    padding: 10px;
+   
 }
 
+
+
 .li-title {
-    font-size: 30px;
+    font-size: 26px;
+    height: 40px;
+    padding-top: 250px;
+    padding-bottom: 40px;
+    transition: all 2s ease;
+    
 }
+
+.li-description {
+    height: 160px;
+    overflow: scroll;
+    margin-top: 0px;
+    color: rgb(226, 226, 226);
+    border-color: transparent;
+    transition: all 2s ease;
+    
+}
+
+.li-rating {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+li {
+    margin-left: -40px; 
+    padding-left: 10px;
+    background-color: transparent;
+    transition: all 2s ease;
+}
+
+
+ul:hover .li-title,
+ul:hover ~ .li-title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+ul:hover .li-description,
+ul:hover ~ .li-description {
+   
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgba(128, 128, 128, 0.481);
+}
+
+ul:hover li, ul:hover ~ li {
+    background-color: #85858579;
+    
+}
+
+i {
+    color: gold;
+}
+
+.stars {
+    position: absolute;
+    left: -999px;
+}
+
+
