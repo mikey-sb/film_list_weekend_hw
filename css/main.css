@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    
+}
+h1, h2, h3, h4, h5, p, li, label {
+    color: white;
+}
+
+.one-star, .two-star, .three-star, .four-star, .five-star {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 3px;
+}
+.one-star{
+    
+    box-shadow: 1px 1px 2px black, 0 0 10px grey, 0 0 5px darkgrey;
+}
+.two-star{
+
+    box-shadow: 1px 1px 2px black, 0px 2px 10px #cd80329f, 0px 2px 8px #7a4b1c9c;
+}
+.three-star{
+
+    
+    box-shadow: 1px 1px 2px black, 0px 3px 10px #C0C0C0, 0px 3px 8px #858585;
+    
+}
+.four-star{
+    
+    box-shadow: 1px 1px 2px black, 0px 5px 15px #3f013f, 0px 5px 10px #800380;
+}
+.five-star{
+    box-shadow: 1px 1px 2px black, 0px 5px 15px #FFD700, 0px 5px 10px #7e6b00;
+    
+}
+
+.comedy {
+    background-image: url("../images/comedy.jpg");
+    background-size: 200px 300px;
+    
+}
+.action {
+    background-image: url("../images/action.png");
+    background-size: 200px 300px;
+}
+.drama {
+    background-image: url("../images/drama.jpg");
+    background-size: 200px 300px;
+}
+.horror {
+    background-image: url("../images/horror.jpg");
+    background-size: 200px 300px;
+}
+.romance {
+    background-image: url("../images/romance.jpg");
+    background-size: 200px 300px;
+}
+.documentary {
+    background-image: url("../images/documentary.jpg");
+    background-size: 200px 300px;
+}
+
+#film-list > ul {
+    width: 200px;
+    height: 300px;
+    flex: 0 1 150px;
+    margin: 20px;
+    list-style: none;
+}
+
+#film-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 350px;
+}
+
+.li-title {
+    font-size: 30px;
+}
