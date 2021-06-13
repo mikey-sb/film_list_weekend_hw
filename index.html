@@ -29,24 +29,26 @@
         <p id="five-star-star"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i></p>    
     </div>
 
-
+    </div>
+    <div class='holo-bg'>
+        <span></span>
     </div>
 
-
+    <div id="form-wrapper">
     <form id="new-film-form">
-        <div id="form-wrapper">
+        
             <div class='form-item'>
-                <label for="title">Title</label>
-                <input type="text" id="title" value = "Casino Royale" required>
+                <!-- <label for="title">Title</label> -->
+                <input type="text" id="title" placeholder = "Title" required>
             </div>
 
             <div class="form-item">
-                <label for="description" class="primary">Description</label>
-                <input type="text" id="description" value = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dignissimos autem quidem necessitatibus voluptate pariatur officia id, odit voluptatibus ipsum earum dolorem rerum excepturi ea voluptatum sit quisquam magnam deserunt. "required/>
+                <!-- <label for="description" class="primary">Description</label> -->
+                <textarea id="description" placeholder = "Description"required></textarea>
             </div>
 
             
-            <div class="form-item form-radio">
+            <div class="form-item form-radio" id="form-radio">
                 <input type="radio" id="genre-radio" name = 'genre' value = "Comedy"/> 
                 <label for="genre" class="primary">Comedy</label><br>
                 <input type="radio" id="genre-radio" name = 'genre' value = "Action" checked/> 
@@ -63,22 +65,24 @@
             </div>
 
             <div class="form-item">
-                <label for="year" class="primary">Year</label>
+                <!-- <label for="year" class="primary">Year</label> -->
                 <input type="number" id = "year" min="1900" max="2030" step="1" value="2021" required/>
             </div>
-
+            <div class="form-item">
+                <p id="star-text">1* &nbsp; 2* &nbsp; 3* &nbsp; 4*  &nbsp;5*</p>
+            </div>
             <div class="form-item">
                 
-                    <label for="rating">Stars:</label>
+                    <!-- <label for="rating">Stars:</label> -->
                     <input type="range" id="rating" name="rating" min="1" max="5">
                   
             </div>
 
-        </div>
-        <input type="submit" value="save">
+       
+        <input type="submit" value="Save" id="submit">
     </form>  
     <button id="delete-all">Delete All</button>
-
+    </div>
     
 
   </body>

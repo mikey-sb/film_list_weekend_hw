@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Javascript loaded');
     document.querySelector('#new-film-form').addEventListener('submit', handleButton);

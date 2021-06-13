@@ -3,8 +3,13 @@ body{
     
 }
 h1, h2, h3, h4, h5, p, li, label {
-    color: white;
+    color: rgb(220, 219, 219);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+   text-align: center;
+   text-shadow: 1px 0px 20px rgb(158, 158, 158);
 }
 
 .one-star, .two-star, .three-star, .four-star, .five-star {
@@ -68,6 +73,7 @@ h1, h2, h3, h4, h5, p, li, label {
     flex: 0 1 150px;
     margin: 20px;
     list-style: none;
+    z-index: 2;
 }
 
 
@@ -80,7 +86,75 @@ h1, h2, h3, h4, h5, p, li, label {
     overflow-x: scroll;
     height: 320px;    
     padding: 10px;
+    z-index: 2;
    
+}
+
+
+
+#title {
+    font-size: 26px;
+    height: 40px;
+    width: 350px;
+    margin-left: 5px;
+    color: grey
+    
+}
+
+#description{
+    height: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 202px;
+    resize: none;
+    margin-left: 5px;
+    background-color: lightgrey;
+}
+
+#form-radio{
+    position: relative;
+    margin-left: 215px; 
+    margin-top: -170px;
+}
+
+#form-radio input{
+    margin-top: 5px;
+    
+}
+
+#year {
+    margin-left: 220px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+#star-text{
+    margin-left: 225px;
+    margin-top: 15px;
+    position: absolute;
+
+}
+
+#rating {
+    margin-left: 220px;
+    margin-top: 35px;
+    position: absolute;
+    
+}
+
+#submit {
+    width: 208px;
+    height: 30px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#delete-all{
+    width: 208px;
+    margin-top: 10px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 5px;
 }
 
 
@@ -90,8 +164,7 @@ h1, h2, h3, h4, h5, p, li, label {
     height: 40px;
     padding-top: 250px;
     padding-bottom: 40px;
-    transition: all 2s ease;
-    
+    transition: all 2s ease; 
 }
 
 .li-description {
@@ -103,6 +176,7 @@ h1, h2, h3, h4, h5, p, li, label {
     transition: all 2s ease;
     
 }
+
 
 .li-rating {
     display: grid;
@@ -147,4 +221,29 @@ i {
     left: -999px;
 }
 
+.holo-bg {
+    width: 90%;
+    height: 15px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:1px 0px 20px rgb(158, 158, 158);
+    background-color: rgb(0, 0, 0);
+    margin-top: -15px;
+    margin-left: 60px;
+    z-index: 0;
+}
+
+#form-wrapper {
+    background-color: black;
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 280px;
+    width: 370px;
+    margin-top: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 0px 20px rgb(158, 158, 158);
+    border-radius: 5px;
+}
 
